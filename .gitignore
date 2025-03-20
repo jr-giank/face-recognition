@@ -1,0 +1,12 @@
+# Enviroment
+venv/
+
+# Media
+media/
+
+# Cache
+recognition/__pycache__
+recognition/migrations/__pycache__
+
+# DB
+db.sqlite3
