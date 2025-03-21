@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from .views import upload_image, compare_faces
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/upload-image/', upload_image, name='upload-image'),
+    path('api/compare-faces/', compare_faces, name='compare_faces')
 ]
