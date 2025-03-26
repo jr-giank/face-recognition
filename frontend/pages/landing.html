@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <style>
+        body {
+            background-color: #303993;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .center-box {
+            background-color: #5b96f6;
+            width: 88%;
+            height: 90%;
+            border-radius: 23px;
+        }
+
+        .logo-box {
+            width: 45%;
+            height: 90%;
+            position: absolute;
+            right: 6%;
+        }
+
+        .logo-circle {
+            width: 60%;
+            height: 55%;
+            background-color: white;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            top: 20%;
+            position: relative;
+        }
+
+        .logo-image {
+            width: 60%;
+            height: 60%;
+            left: 20%;
+            top: 20%;
+            position: absolute;
+        }
+
+        .main {
+            position: absolute;
+            top: 15%;
+            left: 14%;
+            width: 400px
+        }
+
+        .main h1 {
+            font-size: 50px;
+        }
+
+        .main p {
+            padding-top: 20px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        .buttonBox {
+            display: flex; 
+            justify-content: space-between; 
+            padding-top: 60px;
+        }
+
+        .button {
+            background-color: #303993;
+            border-radius: 12px;
+            width: 180px;
+            height: 30px;
+            font-size: 17px;
+            text-align: center;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: #303993">
+    <div class="center-box">
+        <div class="main">
+            <h1>Reconocimiento Facial</h1>
+            <p>Sube y compara imágenes de manera sencilla con tecnología de reconocimiento facial en segundos.</p>
+
+            <div class="buttonBox">
+                <div class="button" onclick="window.location.href='upload.html'">Subir Imagen</div>
+                <div class="button" onclick="window.location.href='search.html'">Buscar Coincidencias</div>
+            </div>
+
+        </div>
+        <div class="logo-box">
+            <div class="logo-circle">
+                <img class="logo-image" src="../public/images/logoFace.png">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="../services/api.js"></script>
+</body>
+
+</html>
