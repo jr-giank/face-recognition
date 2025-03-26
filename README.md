@@ -77,6 +77,19 @@ python manage.py runserver
 ```
 El servidor iniciará en http://127.0.0.1:8000/
 
+## Iniciar el frontend
+
+### 1. Abrir una nueva terminal y entrar al directorio de frontend
+
+desde el directorio del proyecto hacer:
+cd frontend
+
+### 2. Ejecutar el servidor de frontend
+
+python -m http.server 8080
+
+El servidor estara disponible en http://127.0.0.1:8080/
+
 ## Peticiones al servidor
 
 ### 1. Subir imagenes a la BD
